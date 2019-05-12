@@ -1,0 +1,62 @@
+DEBUG: [matplotlib] CACHEDIR=/home/garrett/.cache/matplotlib
+DEBUG: [matplotlib.font_manager] Using fontManager instance from /home/garrett/.cache/matplotlib/fontlist-v300.json
+/home/garrett/SCM/AttnGAN/code/miscc/config.py:107: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  yaml_cfg = edict(yaml.load(f))
+Using config:
+{'B_VALIDATION': False,
+ 'CONFIG_NAME': 'glu-gan2',
+ 'CUDA': False,
+ 'DATASET_NAME': 'photosynthesis',
+ 'DATA_DIR': 'data/photosynthesis',
+ 'DELETE_CAPTIONS_PICKLE': False,
+ 'GAN': {'B_ATTENTION': True,
+         'B_DCGAN': False,
+         'CONDITION_DIM': 100,
+         'DF_DIM': 96,
+         'GF_DIM': 48,
+         'R_NUM': 3,
+         'Z_DIM': 100},
+ 'GPU_ID': 0,
+ 'OUTPUT_DIR': 'output',
+ 'RNN_TYPE': 'LSTM',
+ 'TEXT': {'CAPTIONS_PER_IMAGE': 1, 'EMBEDDING_DIM': 128, 'WORDS_NUM': 244},
+ 'TRAIN': {'BATCH_SIZE': 5,
+           'B_NET_D': True,
+DEBUG: [root] data_dir: data/photosynthesis
+           'DISCRIMINATOR_LR': 0.0002,
+DEBUG: [root] Check if captions.pickle does not exists
+DEBUG: [root] captions.pickle exists
+           'ENCODER_LR': 0.0002,
+           'FLAG': True,
+           'GENERATOR_LR': 0.0002,
+           'MAX_EPOCH': 1,
+           'NET_E': 'pretrain/text_encoder0.pth',
+           'NET_G': '',
+           'RNN_GRAD_CLIP': 0.25,
+           'SMOOTH': {'GAMMA1': 72.4953,
+                      'GAMMA2': 65.3585,
+                      'GAMMA3': 89.2507,
+                      'LAMBDA': 50.0},
+           'SNAPSHOT_INTERVAL': 100},
+ 'TRAIN_SPLIT': 1.0,
+DEBUG: [root] Loading pickle text file names: data/photosynthesis/captions.pickle
+ 'TREE': {'BASE_SIZE': 64, 'BRANCH_NUM': 3},
+ 'VALIDATION_SPLIT': 1.0,
+ 'WORKERS': 4}
+Split Directory: data/photosynthesis/train
+Load filenames from: data/photosynthesis/train/filenames.pickle (7)
+Load filenames from: data/photosynthesis/test/filenames.pickle (7)
+Load from:  data/photosynthesis/captions.pickle
+data_dir Directory: data/photosynthesis
+Load pretrained model from  https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth
+Load image encoder from: pretrain/image_encoder0.pth
+/home/garrett/SCM/AttnGAN/code/env/lib/python3.5/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+Load text encoder from: pretrain/text_encoder0.pth
+# of netsD 3
+Saving model. Epoch: 0
+Saving model to: output/photosynthesis_glu-gan2_2019_05_12_10_11_24/Model/netG_epoch_0.pth
+Save G/Ds models.
+Saving model to: output/photosynthesis_glu-gan2_2019_05_12_10_11_24/Model/netG_epoch_1.pth
+Save G/Ds models.
+Total time for training: 51.20890498161316

@@ -1,0 +1,14 @@
+captions_per_image: 1
+df_dim: 96
+discriminator_lr: 0.0002
+embedding_dim: 128
+epochs: 1
+gamma1: 72.4953
+gamma2: 65.3585
+gamma3: 89.2507
+generator_lr: 0.0002
+gf_dim: 48
+lambda_a: 50
+r_num: 3
+words_num: 244
+z_dim: 100

@@ -1,0 +1,9 @@
+captions_per_image: 1
+embedding_dim: 128
+encoder_lr: 0.003189
+epochs: 1
+gamma1: 72.4953
+gamma2: 65.3585
+gamma3: 89.2507
+rnn_grad_clip: 2.0
+words_num: 244

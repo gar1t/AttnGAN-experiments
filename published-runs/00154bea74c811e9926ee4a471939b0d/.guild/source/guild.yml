@@ -1,0 +1,139 @@
+# TODO
+#
+# - Verify/cleanup flag descriptions
+#
+# - Consider creating a symlink to last generated pth file
+#   whenever writing such files (e.g. latest.pth). Then
+#   change the default path to latest in CFG support. This
+#   is a simpler, more typical approach to solving this
+#   problem.
+
+- config: shared-flags
+  flags:
+    epochs:
+      description: Number of epochs to run
+      arg-name: max_epoch
+    gamma1:
+      description: Smooth gamma1
+      default: 72.4953
+    gamma2:
+      description: Smooth gamma2
+      default: 65.3585
+    gamma3:
+      description: Smooth gamma3
+      default: 89.2507
+    embedding_dim:
+      description: Embedding dimension
+      default: 128
+    captions_per_image:
+      description: Number of captions per image
+      default: 1
+    words_num:
+      description: Number of words per caption
+      default: 244
+
+- model: damsm
+  description: Deep Attentional Multimodal Similarity Model (DAMSM)
+  operations:
+
+    pretrain:
+      description: Pretrain the DAMSM model
+      main: pretrain_DAMSM
+             --data_dir data/photosynthesis
+             --output_dir output
+             --cfg cfg/DAMSM/photosynthesis.yml
+      flags-import: no
+      flags:
+        $include: shared-flags
+
+        # Pretrain specific flag defaults
+        epochs: 201
+        gamma1: 72.4953
+        gamma2: 65.3585
+        gamma3: 89.2507
+        encoder_lr: 0.003189
+        embedding_dim: 128
+        rnn_grad_clip: 2.0
+        captions_per_image: 1
+        words_num: 244
+
+        # Pretrain specific flags
+        encoder_lr:
+          description: Encoder learning rate
+          default: 0.003189
+        rnn_grad_clip:
+          description: RNN gradient clip
+          default: 2.0
+
+      requires:
+        - file: ../data
+        - file: cfg
+
+      output-scalars:
+        step: 'end epoch +([0-9]+)'
+        s_loss: 'valid loss +([0-9\.]+)'
+        w_loss: 'valid loss +[0-9\.]+ +([0-9\.]+)'
+
+      objective: s_loss
+
+    train:
+      description: Train the DAMSM model
+      main: main
+             --data_dir data/photosynthesis
+             --model_dir pretrain
+             --output_dir output
+             --net_e latest
+             --cfg cfg/photosynthesis_attn2.yml
+      requires:
+        - file: cfg
+        - file: ../data
+        - name: pretrain
+          operation: pretrain
+          select: .+\.pth
+          path: pretrain
+
+      flags-import: no
+      flags:
+        $include: shared-flags
+
+        # Train specific flags
+        discriminator_lr:
+          description: Discriminator learning rate
+          default: 0.0002
+        generator_lr:
+          description: Generator learning rate
+          default: 0.0002
+        lambda_a:
+          description: Lambda A
+          default: 50
+        df_dim:
+          description: DF dimension
+          default: 96
+        gf_dim:
+          description: GF dimension
+          default: 48
+        z_dim:
+          description: X dimension
+          default: 100
+        r_num:
+          description: R
+          default: 3
+
+    evaluate:
+      description: 'TODO: Is this the right op name, or is it predict?'
+      main: guild.pass
+      requires:
+        - name: pretrain
+          operation: pretrain
+          select: .+\.pth
+          path: pretrain
+        - name: train
+          operation: train
+          select: .+\.pth
+          path: train
+
+    _check:
+      steps:
+        - run: pretrain epochs=201
+        - run: train epochs=201
+        - run: evaluate
