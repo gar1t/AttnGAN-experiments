@@ -1,0 +1,106 @@
+INFO: [guild] Found 0 previous trial(s) for use in optimization
+INFO: [guild] Initialized trial 09d60e4a (batch_size=7, captions_per_image=1, delete_captions_pickle=yes, embedding_dim=1024, encoder_lr=0.0382, epochs=1, gamma2=51.1301, gamma3=26.8084, gpu=0, rnn_grad_clip=0.93, snapshot-interval=100, train_split=1.0, validation_split=1.0, words_num=244)
+INFO: [guild] Running trial 09d60e4a: damsm:pretrain (batch_size=7, captions_per_image=1, delete_captions_pickle=yes, embedding_dim=1024, encoder_lr=0.0382, epochs=1, gamma2=51.1301, gamma3=26.8084, gpu=0, rnn_grad_clip=0.93, snapshot-interval=100, train_split=1.0, validation_split=1.0, words_num=244)
+Resolving config dependency
+Resolving data dependency
+/home/garrett/SCM/AttnGAN/code/miscc/config.py:106: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  yaml_cfg = edict(yaml.load(f))
+Using config:
+{'B_VALIDATION': False,
+ 'CONFIG_NAME': 'DAMSM',
+ 'CUDA': True,
+ 'DATASET_NAME': 'photosynthesis',
+ 'DATA_DIR': 'photosynthesis',
+ 'GAN': {'B_ATTENTION': True,
+         'B_DCGAN': False,
+         'CONDITION_DIM': 100,
+         'DF_DIM': 64,
+         'GF_DIM': 128,
+         'R_NUM': 2,
+         'Z_DIM': 100},
+ 'GPU_ID': 0,
+ 'OUTPUT_DIR': 'output',
+ 'RNN_TYPE': 'LSTM',
+ 'TEXT': {'CAPTIONS_PER_IMAGE': 1, 'EMBEDDING_DIM': 1024, 'WORDS_NUM': 244},
+ 'TRAIN': {'BATCH_SIZE': 7,
+           'B_NET_D': True,
+           'DISCRIMINATOR_LR': 0.0002,
+           'ENCODER_LR': 0.0382,
+           'FLAG': True,
+           'GENERATOR_LR': 0.0002,
+           'MAX_EPOCH': 1,
+           'NET_E': '',
+           'NET_G': '',
+           'RNN_GRAD_CLIP': 0.93,
+           'SMOOTH': {'GAMMA1': 168.6969,
+                      'GAMMA2': 51.1301,
+                      'GAMMA3': 26.8084,
+                      'LAMBDA': 1.0},
+           'SNAPSHOT_INTERVAL': 100},
+ 'TRAIN_SPLIT': 1.0,
+ 'TREE': {'BASE_SIZE': 5, 'BRANCH_NUM': 1},
+ 'VALIDATION_SPLIT': 1.0,
+ 'WORKERS': 1}
+photosynthesis/filenames.txt
+Number of Train files: 7
+Number of Test files: 7
+INFO: [root] Number of text files: 7
+DEBUG: [root] Deleting file: photosynthesis/captions.pickle
+DEBUG: [root] splitType: train 
+DEBUG: [root] Deleting file: photosynthesis/train/filenames.pickle
+DEBUG: [root] Number of items in pickled list: 7
+DEBUG: [root] splitType: test 
+DEBUG: [root] Deleting file: photosynthesis/test/filenames.pickle
+DEBUG: [root] Number of items in pickled list: 7
+INFO: [root] FINISHED WRITING TEXT TO <<{'train': 'photosynthesis/train/filenames.pickle', 'test': 'photosynthesis/test/filenames.pickle'}>>
+DEBUG: [root] data_dir: photosynthesis
+Split Directory: photosynthesis/train
+DEBUG: [root] Check if captions.pickle does not exists
+Load filenames from: photosynthesis/train/filenames.pickle (7)
+Load filenames from: photosynthesis/test/filenames.pickle (7)
+Save to:  photosynthesis/captions.pickle
+data_dir Directory: photosynthesis
+Number words: 244
+DEBUG: [root] data_dir: photosynthesis
+Embedding Number: 1
+Split Directory: photosynthesis/test
+DEBUG: [root] Check if captions.pickle does not exists
+Load filenames from: photosynthesis/train/filenames.pickle (7)
+Load filenames from: photosynthesis/test/filenames.pickle (7)
+Load from:  photosynthesis/captions.pickle
+data_dir Directory: photosynthesis
+DEBUG: [root] captions.pickle exists
+DEBUG: [root] Loading pickle text file names: photosynthesis/captions.pickle
+/home/garrett/SCM/AttnGAN/code/env/lib/python3.5/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+Load pretrained model from  https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth
+| epoch   0 |     0/    1 batches | ms/batch 30.21 | s_loss  0.01  0.01 | w_loss  0.12  0.07
+att_sze equal to 17
+DEBUG: [PIL.PngImagePlugin] STREAM b'IHDR' 16 13
+DEBUG: [PIL.PngImagePlugin] STREAM b'IDAT' 41 1216
+-----------------------------------------------------------------------------------------
+| end epoch   0 | valid loss 426.05 10794.35 | lr 0.03820|
+-----------------------------------------------------------------------------------------
+Save G/Ds models.
+INFO: [guild] Found 1 previous trial(s) for use in optimization
+INFO: [guild] Initialized trial 09d60e4b (batch_size=7.0, captions_per_image=1.0, delete_captions_pickle=1.0, embedding_dim=1024.0, encoder_lr=0.0382, epochs=1.0, gamma2=51.1301, gamma3=26.8084, gpu=0.0, rnn_grad_clip=0.93, snapshot-interval=100.0, train_split=1.0, validation_split=1.0, words_num=244.0)
+INFO: [guild] Running trial 09d60e4b: damsm:pretrain (batch_size=7.0, captions_per_image=1.0, delete_captions_pickle=1.0, embedding_dim=1024.0, encoder_lr=0.0382, epochs=1.0, gamma2=51.1301, gamma3=26.8084, gpu=0.0, rnn_grad_clip=0.93, snapshot-interval=100.0, train_split=1.0, validation_split=1.0, words_num=244.0)
+Resolving config dependency
+Resolving data dependency
+usage: pretrain_DAMSM.py [-h] [--cfg CFG_FILE] [--gpu GPU_ID]
+                         [--data_dir DATA_DIR] [--output_dir OUTPUT_DIR]
+                         [--manualSeed MANUALSEED] [--batch_size BATCH_SIZE]
+                         [--delete_captions_pickle]
+                         [--train_split TRAIN_SPLIT]
+                         [--validation_split VALIDATION_SPLIT]
+                         [--embedding_dim EMBEDDING_DIM]
+                         [--captions_per_image CAPTIONS_PER_IMAGE]
+                         [--words_num WORDS_NUM]
+                         [--snapshot_interval SNAPSHOT_INTERVAL]
+                         [--max_epoch MAX_EPOCH]
+                         [--snapshot-interval SNAPSHOT_INTERVAL]
+                         [--encoder_lr ENCODER_LR]
+                         [--rnn_grad_clip RNN_GRAD_CLIP] [--gamma1 GAMMA1]
+                         [--gamma2 GAMMA2] [--gamma3 GAMMA3]
+pretrain_DAMSM.py: error: argument --batch_size: invalid int value: '7.0'
+ERROR: [guild] Run 09d60e4b822811e9b16de4a471939b0d failed - see logs for details
