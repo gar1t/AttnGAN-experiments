@@ -54,64 +54,6 @@ There are no scalars for this run.
 | Path | Type | Size | Modified | MD5 |
 | ---- | ---- | ---- | -------- | --- |
 | 515966ca822011e9b16de4a471939b0d | dir link | 4.0K | 2019-05-29 09:45:47 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild | dir | 4.0K | 2019-05-29 09:47:35 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs | dir | 4.0K | 2019-05-29 09:47:35 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/_flag_map | file | 18 | 2019-05-29 09:45:42 UTC | cc526aff6c4ffa08516cfdc4e1470cf3 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/batch | file | 33 | 2019-05-29 09:45:41 UTC | 74304c57217b4d569be818a5119e065e |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/cmd | file | 546 | 2019-05-29 09:45:42 UTC | b1514c5b5d2c9b0475cce8edf55ed6f9 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/deps | file | 99 | 2019-05-29 09:45:42 UTC | 703daacb192911ec8ecd52a8920bfa5e |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/env | file | 4.4K | 2019-05-29 09:45:42 UTC | 3d0c754c129aafe5d802aaa15e1a64b0 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/exit_status | file | 2 | 2019-05-29 09:47:35 UTC | 897316929176464ebc9ad085f31e7284 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/flags | file | 267 | 2019-05-29 09:45:42 UTC | d4b23421c7b1b4a53509fe379d4eabd0 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/host | file | 6 | 2019-05-29 09:45:42 UTC | 73a548c246139510e6e6df34ed023b70 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/id | file | 6 | 2019-05-29 09:44:51 UTC | 70cb886733059df7a7e1513a7fa71167 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/initialized | file | 17 | 2019-05-29 09:45:41 UTC | 25d15eb2758b73fec157235e0794b7d5 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/label | file | 242 | 2019-05-29 09:45:42 UTC | b2afe6b3f7fdf466e10a5fd881e88062 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/max_trials | file | 2 | 2019-05-29 09:45:42 UTC | 26ab0db90d72e28ad0ba1e22ee510510 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/objective | file | 7 | 2019-05-29 09:45:42 UTC | 0ad3f075a4d6508d319700a6d0cc20aa |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/opdef | file | 645 | 2019-05-29 09:45:42 UTC | 1aeaf06bb61f46b874b03542c46056a6 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/optimizer | file | 9 | 2019-05-29 09:44:51 UTC | 14ee7cec0d905746f0a61b231a0f673a |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/random_seed | file | 11 | 2019-05-29 09:45:42 UTC | a8a95c6dbf39110ce3384a6fbfe26193 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/run_params | file | 1.0K | 2019-05-29 09:45:42 UTC | 65b985a165b609ff8c220462101ade9a |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/started | file | 17 | 2019-05-29 09:45:42 UTC | ff5360a61d1deccf212fd52d0e3e7823 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/stopped | file | 17 | 2019-05-29 09:47:35 UTC | 025362ec650fe0579d08a3571830dcf7 |
-| 515966ca822011e9b16de4a471939b0d/.guild/attrs/user | file | 8 | 2019-05-29 09:45:42 UTC | d4c03030439d2dbc19fa339d84ffd1fb |
-| 515966ca822011e9b16de4a471939b0d/.guild/events.out.tfevents.1559141254.omaha | file | 109 | 2019-05-29 09:47:34 UTC | cd5c2408c9e4483df865b57021eeb320 |
-| 515966ca822011e9b16de4a471939b0d/.guild/opref | file | 98 | 2019-05-29 09:45:42 UTC | 1dff57b401b224aa594844635dca3cfe |
-| 515966ca822011e9b16de4a471939b0d/.guild/output | file | 3.5K | 2019-05-29 09:47:34 UTC | 32bbf00d1deadc93665a1867595eedd3 |
-| 515966ca822011e9b16de4a471939b0d/.guild/output.index | file | 711 | 2019-05-29 09:47:34 UTC | 25a9fa8b12fc2d8c71aff9a48f0a23b2 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source | dir | 4.0K | 2019-05-29 09:45:41 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/.gitignore | file | 45 | 2019-05-29 09:45:42 UTC | b906f3f8c658d719e59a1f427603edc6 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/GlobalAttention.py | file | 4.0K | 2019-05-29 09:45:42 UTC | 60e7482314e07ac757bb2147ea5cce24 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/README.md | file | 197 | 2019-05-29 09:45:42 UTC | ce9db08abe616a8858e86eff578b49ec |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/__init__.py | file | 0 | 2019-05-29 09:45:42 UTC | d41d8cd98f00b204e9800998ecf8427e |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg | dir | 4.0K | 2019-05-29 09:45:41 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/DAMSM | dir | 4.0K | 2019-05-29 09:45:41 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/DAMSM/bird.yml | file | 569 | 2019-05-29 09:45:42 UTC | a89c7dd759a2dd29e0dfda78986d7c8f |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/DAMSM/coco.yml | file | 560 | 2019-05-29 09:45:42 UTC | e487ab3dad4178b9881c41365f2c90c3 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/DAMSM/photosynthesis.yml | file | 711 | 2019-05-29 09:45:42 UTC | 8053d460a96460ff8f58c011e622e9e7 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/bird_attn2.yml | file | 655 | 2019-05-29 09:45:42 UTC | 2722ade64f2320627552913bcf927f64 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/bird_attnDCGAN2.yml | file | 678 | 2019-05-29 09:45:42 UTC | 179b045390fd4b34d575d1153666d4a9 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/coco_attn2.yml | file | 675 | 2019-05-29 09:45:42 UTC | 580cac555983441a7f97ff883101cc4a |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/eval_bird.yml | file | 467 | 2019-05-29 09:45:42 UTC | c948d31c7a4497fefe037246aef35502 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/eval_bird_attnDCGAN2.yml | file | 462 | 2019-05-29 09:45:42 UTC | 10caf4840bdad181c1c453fc8657ee5a |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/eval_coco.yml | file | 433 | 2019-05-29 09:45:42 UTC | d9947cab90b776834b8a88d635da3fea |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/eval_photosynthesis.yml | file | 684 | 2019-05-29 09:45:42 UTC | ac5cc38f4f70e18e0979385ce54979dd |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/cfg/photosynthesis_attn2.yml | file | 846 | 2019-05-29 09:45:42 UTC | 6d68c5f5bc00ee987b17f7d64d6a5f45 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/datasets.py | file | 12.1K | 2019-05-29 09:45:42 UTC | c4aa7379f88a5564030dc3f78298d004 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/get_model_data.py | file | 431 | 2019-05-29 09:45:42 UTC | 5da898cfefdb8a4a1813de524b1aa7a8 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/guild.yml | file | 6.1K | 2019-05-29 09:45:42 UTC | 34573952d9d9affab0c04f2f726c2d7a |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/main.py | file | 8.4K | 2019-05-29 09:45:42 UTC | f89163f9003f229025d9b0a273590219 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/miscc | dir | 4.0K | 2019-05-29 09:45:41 UTC |  |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/miscc/__init__.py | file | 70 | 2019-05-29 09:45:42 UTC | dc923e6b5aba4ba41ffdcbedefc6dd47 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/miscc/config.py | file | 2.6K | 2019-05-29 09:45:42 UTC | 531d44cd91926036e1078a9596581b67 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/miscc/losses.py | file | 7.9K | 2019-05-29 09:45:42 UTC | fb353760434bd3ed770a82008d967039 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/miscc/prepareData_files.py | file | 4.5K | 2019-05-29 09:45:42 UTC | da4e1e51b37d06a897e51115e5d9ad47 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/miscc/utils.py | file | 12.0K | 2019-05-29 09:45:42 UTC | eeb9508226f4d51a83e81da8553b8230 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/model.py | file | 21.5K | 2019-05-29 09:45:42 UTC | b2a85fb5ad388e6fa14847efde159390 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/pretrain_DAMSM.py | file | 14.1K | 2019-05-29 09:45:42 UTC | cd0a2e7bcb22c4a242cae2419f92e2ce |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/requirements.txt | file | 87 | 2019-05-29 09:45:42 UTC | a79c71319a4274bcd10201295c6afd25 |
-| 515966ca822011e9b16de4a471939b0d/.guild/source/trainer.py | file | 23.3K | 2019-05-29 09:45:42 UTC | 16fbb67d6f4b218f722625e9fb21ddc9 |
 | 515966ca822011e9b16de4a471939b0d/cfg | dir link | 4.0K | 2019-05-24 18:40:10 UTC |  |
 | 515966ca822011e9b16de4a471939b0d/cfg/DAMSM | dir | 4.0K | 2019-05-24 18:40:10 UTC |  |
 | 515966ca822011e9b16de4a471939b0d/cfg/DAMSM/bird.yml | file | 569 | 2019-04-15 16:11:50 UTC | a89c7dd759a2dd29e0dfda78986d7c8f |
