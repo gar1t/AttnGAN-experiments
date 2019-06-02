@@ -3,6 +3,7 @@ operation: damsm:pretrain
 status: completed
 started: 2019-05-29 15:31:33 UTC
 stopped: 2019-05-29 15:32:15 UTC
+time: 0:00:42
 marked: no
 label: gp batch_size=7 captions_per_image=1 delete_captions_pickle=yes embedding_dim=1024
   encoder_lr=0.0382 epochs=1 gamma2=51.1301 gamma3=26.8084 gpu=0 rnn_grad_clip=0.93

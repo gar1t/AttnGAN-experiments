@@ -8,9 +8,9 @@
 
 
 
-| ID                   | Operation           | Started                  | Duration                | Status           | Label                |
-| --                   | ---------           | ---------                | --------                | ------           | -----                |
-| 09817ba0 | damsm:pretrain+gp | 2019&#8209;05&#8209;29 15:40:08 UTC | &nbsp; | completed | &nbsp; |
+| ID                   | Operation           | Started                  | Time                | Status           | Label                |
+| --                   | ---------           | ---------                | ----                | ------           | -----                |
+| 09817ba0 | damsm:pretrain+gp | 2019&#8209;05&#8209;29 15:40:08 UTC | 0:00:54 | completed | &nbsp; |
 
 
 

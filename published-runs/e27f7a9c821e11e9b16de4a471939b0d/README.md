@@ -8,9 +8,9 @@
 
 
 
-| ID                   | Operation           | Started                  | Duration                | Status           | Label                |
-| --                   | ---------           | ---------                | --------                | ------           | -----                |
-| e27f7a9c | damsm:pretrain | 2019&#8209;05&#8209;29 14:34:37 UTC | &nbsp; | completed | gp batch_size=7 captions_per_image=1 delete_captions_pickle=yes embedding_dim=1024 encoder_lr=0.0382 epochs=1 gamma2=51.1301 gamma3=26.8084 gpu=0 rnn_grad_clip=0.93 snapshot-interval=100 train_split=1.0 validation_split=1.0 words_num=244 |
+| ID                   | Operation           | Started                  | Time                | Status           | Label                |
+| --                   | ---------           | ---------                | ----                | ------           | -----                |
+| e27f7a9c | damsm:pretrain | 2019&#8209;05&#8209;29 14:34:37 UTC | 0:00:42 | completed | gp batch_size=7 captions_per_image=1 delete_captions_pickle=yes embedding_dim=1024 encoder_lr=0.0382 epochs=1 gamma2=51.1301 gamma3=26.8084 gpu=0 rnn_grad_clip=0.93 snapshot-interval=100 train_split=1.0 validation_split=1.0 words_num=244 |
 
 
 
@@ -34,7 +34,7 @@
 | ---- | ----- |
 | batch_size | 7 |
 | captions_per_image | 1 |
-| delete_captions_pickle | True |
+| delete_captions_pickle | yes |
 | embedding_dim | 1024 |
 | encoder_lr | 0.0382 |
 | epochs | 1 |

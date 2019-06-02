@@ -3,6 +3,7 @@ operation: damsm:pretrain+gp
 status: completed
 started: 2019-05-29 15:40:08 UTC
 stopped: 2019-05-29 15:41:02 UTC
+time: 0:00:54
 marked: no
 label: null
 command: /home/garrett/SCM/AttnGAN/code/env/bin/python -um guild.plugins.skopt_gp_main
